@@ -1,6 +1,22 @@
-@mixin flex($jc, $fd) {
+@mixin flex($jc, $fd, $ai: center, $gap: 1rem) {
   display: flex;
   justify-content: $jc;
-  align-items: center;
+  align-items: $ai;
   flex-direction: $fd;
+  gap: $gap;
+}
+@mixin btn($ver, $hor, $fs: 1.76rem) {
+  font-size: $fs;
+  text-decoration: none;
+  background-color: $bg-color-btn;
+  color: $white;
+  padding: $ver $hor;
+  border-radius: 3rem;
+  font-size: 1.12rem;
+  font-weight: $font-bolder;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: $btn-hover;
+  }
 }

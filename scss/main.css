@@ -12,9 +12,11 @@ html {
 }
 
 body {
+  background-image: url("../images/hero_1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(57, 47, 47, 0.352);
   position: relative;
 }
 
@@ -24,18 +26,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  gap: 1rem;
   padding: 2.5rem;
-  position: absolute;
-}
-
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0rem;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
 }
 
 .logo {
+  color: #fff;
   font-size: 2.12rem;
   font-weight: 800;
 }
@@ -46,6 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  gap: 1rem;
 }
 .links li {
   list-style: none;
@@ -81,7 +80,114 @@ header {
 
 .hero {
   width: 100%;
-  height: 120vh;
-  background-image: url("../images/hero_1.jpg");
-  background-size: cover;
+  height: 100vh;
+}
+
+.con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10rem;
+}
+.con div {
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.con::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #343a40;
+  opacity: 0.8;
+}
+
+.contactForm {
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 7px;
+}
+.contactForm h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.contactForm button {
+  font-size: 1.76rem;
+  text-decoration: none;
+  background-color: #7971ea;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.12rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+  border: none;
+}
+.contactForm button:hover {
+  background-color: #3a2ee0;
+}
+
+.heroRight {
+  width: 30%;
+}
+
+.inputbox {
+  margin-bottom: 2rem;
+}
+
+.inputbox input {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 2.3rem 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.heroLeft {
+  width: 35%;
+}
+.heroLeft h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.heroLeft p {
+  color: #cfc;
+  font-size: 1.75rem;
+  margin-bottom: 6rem;
+}
+.heroLeft a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  background-color: #7971ea;
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 3rem;
+  font-size: 1.12rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+.heroLeft a:hover {
+  background-color: #3a2ee0;
+}
+
+.test {
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
